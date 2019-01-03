@@ -5,13 +5,14 @@ import { NavLink } from 'react-router-dom';
 import './Blog.css';
 
 class Blog extends Component {
+
     render () {
         return (
             <div className="Blog">
                 <header>
                     <nav>
                         <ul>
-                            <li><NavLink to="/" exact>Home</NavLink></li>
+                            <li><NavLink to="/posts" exact>Posts</NavLink></li>
                             <li><NavLink to={{
                                 pathname: '/new-post',
                                 hash: '#submit',
